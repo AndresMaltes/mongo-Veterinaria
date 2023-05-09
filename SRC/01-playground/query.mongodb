@@ -1,2 +1,70 @@
 use("sample_training");
-db.zips.find({state:"NY"})
+/*db.zips.insertMany([
+    {
+        "city": "MIAMI",
+        "zip": "33126",
+        "loc": {
+        "y": 25.985432,
+        "x": 80.871290
+        },
+        "pop": 82312,
+        "state": "FL"
+    },
+    {
+        "city": "MIAMI",
+        "zip": "33127",
+        "loc": {
+        "y": 25.7952,
+        "x": 80.871290
+        },
+        "pop": 88712,
+        "state": "FL"
+    },
+])*/
+
+/*db.zips.insertMany([
+    {
+        "city": "NEW YORK",
+        "zip": "338712",
+        "loc": {
+        "y": 25.998123,
+        "x": 80.981241
+        },
+        "pop": 9,
+        "state": "FL"
+    },
+    {
+        "city": "NEW YORK",
+        "zip": "31231",
+        "loc": {
+        "y": 25.9812,
+        "x": 80.807123
+        },
+        "pop": 88123,
+        "state": "FL"
+    },
+])*/
+
+//db.zips.find({city:"PARIS"})
+
+//db.zips.find({city:"NEW YORK", state:"NY"})
+
+//db.zips.deleteOne({zip:"10001"})
+
+/*db.zips.insertMany([
+    {
+    id: 8764,
+    nombre: "Allan Barreto",
+    direccion: "Calle 98 b sur #87-12",
+    año: 18,
+    roll_no:199406
+    },
+    {
+    id: 8765,
+    nombre: "Luis Alberto",
+    direccion: "Calle 102 b sur #87-12",
+    año: 21,
+    roll_no:199408
+    }
+])*/
+
