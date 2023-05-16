@@ -1,70 +1,85 @@
-use("sample_training");
-/*db.zips.insertMany([
-    {
-        "city": "MIAMI",
-        "zip": "33126",
-        "loc": {
-        "y": 25.985432,
-        "x": 80.871290
-        },
-        "pop": 82312,
-        "state": "FL"
-    },
-    {
-        "city": "MIAMI",
-        "zip": "33127",
-        "loc": {
-        "y": 25.7952,
-        "x": 80.871290
-        },
-        "pop": 88712,
-        "state": "FL"
-    },
-])*/
+use("Veterinaria");
+//db.createCollection("Usuarios");
+//db.createCollection("Animales");
+//db.createCollection("Servicios");
+//db.createCollection("Empleados");
+//db.createCollection("Administrador");
 
-/*db.zips.insertMany([
-    {
-        "city": "NEW YORK",
-        "zip": "338712",
-        "loc": {
-        "y": 25.998123,
-        "x": 80.981241
-        },
-        "pop": 9,
-        "state": "FL"
-    },
-    {
-        "city": "NEW YORK",
-        "zip": "31231",
-        "loc": {
-        "y": 25.9812,
-        "x": 80.807123
-        },
-        "pop": 88123,
-        "state": "FL"
-    },
-])*/
+//Usuario
+db.Usuarios.insertOne({
+    usNombre: "",
+    usDireccion: "",
+    usNombreAnimal: "",
+    usEdad: "",
+    usServicio: ""
+});
 
-//db.zips.find({city:"PARIS"})
+//Animales
+db.Animales.insertOne({
+    anNombre: "",
+    anRaza: "",
+    asEdad: "",
+    asDescripcion: "",
+    asVacuna: ""
+});
 
-//db.zips.find({city:"NEW YORK", state:"NY"})
+//Servicios
+db.Servicios.insertOne({
+    sePeluqueria: [
+        {
+            peEspecialista: "",
+            peCanina: "35.000",
+            peFelilna: "30.000"
+        }
+    ],
+    seAlimentos: [
+        {
+            alEspecialista: "",
+            alPurina: "",
+            alGolosina: "",
+            alHuesos: ""
+        }
+    ],
+    seVacuna: [
+        {
+            vaEspecialista: "",
+            vaRabia: "10.000",
+            vaParvovirus: "",
+            vaHepatitis: "",
+            vaLeptospirosis: "",
+            vaDistemper: ""
+        }
+    ],
+    seJuguete: [
+        {
+            juPelota: [
+                {
+                    peGrandeCan: "",
+                    pePequeñaCan: "",
+                    peGrandeFel: "",
+                    pePequeñaFel: ""
+                }
+            ],
+            juLazo: "",
+            juPeluche: ""
+        }
+    ]
+});
 
-//db.zips.deleteOne({zip:"10001"})
+db.Empleados.insertOne({
+    emNombre: "",
+    emDireccion: "",
+    emCedula: "",
+    emFechaNacimiento: "",
+    emRol: [{
+        _id: ""
+    }],
+    emActivo: ""
+});
 
-/*db.zips.insertMany([
-    {
-    id: 8764,
-    nombre: "Allan Barreto",
-    direccion: "Calle 98 b sur #87-12",
-    año: 18,
-    roll_no:199406
-    },
-    {
-    id: 8765,
-    nombre: "Luis Alberto",
-    direccion: "Calle 102 b sur #87-12",
-    año: 21,
-    roll_no:199408
-    }
-])*/
-
+db.Administrador.insertOne({
+    adNombre: "",
+    adFechaNacimiento: "",
+    adCedula: "",
+    adDireccion: ""
+})
